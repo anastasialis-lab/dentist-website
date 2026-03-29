@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U&S Dental Clinic — Стоматологічна клініка у Львові</title>
+    <meta name="description" content="Стоматологічна клініка U&S у Львові. Лікування, протезування, імплантологія, ортодонтія. Понад 20 років досвіду. Запишіться на прийом!">
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <img src="img/logo.jpg" alt="U&S Dental Clinic" class="logo__img">
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav__link">Про нас</a>
+                <a href="#services" class="nav__link">Послуги</a>
+                <a href="#team" class="nav__link">Команда</a>
+                <a href="#reviews" class="nav__link">Відгуки</a>
+                <a href="#contacts" class="nav__link">Контакти</a>
+            </nav>
+            <a href="tel:+380678107237" class="header__phone">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +380 67 810 7237
+            </a>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <p class="hero__badge">Понад 20 років досвіду</p>
+                <h1 class="hero__title">Ваша усмішка — <br>наша <span class="text-accent">турбота</span></h1>
+                <p class="hero__text">Сучасна стоматологія у Львові, де кожен пацієнт отримує персональну увагу, комфортне лікування та результат, який надихає усміхатися.</p>
+                <div class="hero__actions">
+                    <a href="tel:+380678107237" class="btn btn--primary">Записатися на прийом</a>
+                    <a href="#services" class="btn btn--outline">Наші послуги</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">20+</span>
+                        <span class="hero__stat-label">років досвіду</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">5.0</span>
+                        <span class="hero__stat-label">рейтинг Google</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">1000+</span>
+                        <span class="hero__stat-label">щасливих пацієнтів</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__image-wrapper">
+                    <div class="hero__blob"></div>
+                    <img src="img/team.jpg" alt="Команда U&S Dental Clinic" class="hero__photo">
+                </div>
+            </div>
+        </div>
+        <div class="hero__wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--color-bg)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__image">
+                    <img src="img/kabinet.webp" alt="Сучасний кабінет U&S Dental Clinic" class="about__photo">
+                    <div class="about__card">
+                        <span class="about__card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </span>
+                        <div>
+                            <strong>З 2021 року</strong>
+                            <p>Офіційно працюємо у Львові</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__content">
+                    <p class="section__label">Про клініку</p>
+                    <h2 class="section__title">Місце, де турбуються <br>про вашу <span class="text-accent">усмішку</span></h2>
+                    <p class="about__text">U&S Dental Clinic — це сучасна стоматологічна клініка у самому серці Львова. Наша команда фахівців з понад 20-річним досвідом поєднує професіоналізм із теплим, людяним підходом до кожного пацієнта.</p>
+                    <p class="about__text">Ми створили простір, де ви почуваєтесь безпечно та комфортно. Новітнє обладнання, сучасні методи анестезії та індивідуальний план лікування — все для того, щоб ваш візит був максимально приємним.</p>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <span class="about__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </span>
+                            <div>
+                                <strong>Безболісне лікування</strong>
+                                <p>Сучасна анестезія для повного комфорту</p>
+                            </div>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </span>
+                            <div>
+                                <strong>Індивідуальний підхід</strong>
+                                <p>Персональний план лікування для кожного</p>
+                            </div>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                            </span>
+                            <div>
+                                <strong>Новітнє обладнання</strong>
+                                <p>Точна діагностика та ефективне лікування</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <p class="section__label">Послуги</p>
+                <h2 class="section__title">Повний спектр <span class="text-accent">стоматологічних</span> послуг</h2>
+                <p class="section__subtitle">Від профілактики до складного протезування — ми подбаємо про здоров'я ваших зубів на кожному етапі.</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 1.5.5 3 1.5 4.2L12 22l5.5-8.8A7.5 7.5 0 0 0 19 9a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Лікування зубів</h3>
+                    <p class="service-card__text">Лікування карієсу, пульпіту та інших захворювань сучасними методами терапії. Пломбування з використанням найкращих матеріалів.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Протезування</h3>
+                    <p class="service-card__text">Відновлення втрачених зубів за допомогою коронок, мостів та знімних протезів. Повернемо естетику та функціональність вашої усмішки.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Імплантологія</h3>
+                    <p class="service-card__text">Встановлення зубних імплантів — надійне та довговічне рішення для заміни втрачених зубів. Природний вигляд та повна функціональність.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Ортодонтія</h3>
+                    <p class="service-card__text">Виправлення прикусу та вирівнювання зубів за допомогою брекет-систем та прозорих елайнерів для дітей і дорослих.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Професійна гігієна</h3>
+                    <p class="service-card__text">Комплексне чищення зубів, видалення зубного каменю та нальоту. Професійна профілактика для здорової усмішки.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Відбілювання зубів</h3>
+                    <p class="service-card__text">Безпечне та ефективне відбілювання для сяючої усмішки. Сучасні методи, які зберігають здоров'я емалі.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Дитяча стоматологія</h3>
+                    <p class="service-card__text">Дбайливий підхід до маленьких пацієнтів. Лікування в комфортній атмосфері, щоб діти не боялися стоматолога.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Рентген-діагностика</h3>
+                    <p class="service-card__text">Панорамний знімок зубів для точної діагностики. Сучасне обладнання з мінімальним рівнем випромінювання.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <p class="section__label">Наша клініка</p>
+                <h2 class="section__title">Затишок та <span class="text-accent">сучасність</span></h2>
+            </div>
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--wide" data-aos>
+                    <img src="img/kabinet.webp" alt="Стоматологічний кабінет" loading="lazy">
+                </div>
+                <div class="gallery__item" data-aos>
+                    <img src="img/639737903_18564738931047888_7901752494834414344_n.webp" alt="Інтер'єр клініки" loading="lazy">
+                </div>
+                <div class="gallery__item" data-aos>
+                    <img src="img/unnamed.webp" alt="Процес лікування" loading="lazy">
+                </div>
+                <div class="gallery__item" data-aos>
+                    <img src="img/oksana_stavinoga-main-doctor.jpg" alt="Стерилізація інструментів" loading="lazy">
+                </div>
+                <div class="gallery__item" data-aos>
+                    <img src="img/2025-10-22.webp" alt="Лікар за роботою" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <p class="section__label">Наша команда</p>
+                <h2 class="section__title">Фахівці, яким <span class="text-accent">довіряють</span></h2>
+                <p class="section__subtitle">Наші лікарі — це досвідчені професіонали, які постійно вдосконалюють свої навички та слідкують за новітніми тенденціями у стоматології.</p>
+            </div>
+            <div class="team__grid">
+                <div class="team-card" data-aos>
+                    <div class="team-card__photo">
+                        <img src="img/2025-10-22.webp" alt="Ставінога Оксана Федорівна" loading="lazy">
+                    </div>
+                    <div class="team-card__info">
+                        <h3 class="team-card__name">Ставінога Оксана Федорівна</h3>
+                        <p class="team-card__role">Лікар-стоматолог</p>
+                        <p class="team-card__desc">Досвідчений фахівець з багаторічним стажем. Спеціалізується на терапевтичній стоматології та протезуванні.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-card__photo">
+                        <img src="img/ortodont.jpg" alt="Лікар-ортодонт" loading="lazy">
+                    </div>
+                    <div class="team-card__info">
+                        <h3 class="team-card__name">Лікар-ортодонт</h3>
+                        <p class="team-card__role">Ортодонтія</p>
+                        <p class="team-card__desc">Спеціаліст з виправлення прикусу. Працює з брекет-системами та елайнерами для пацієнтів будь-якого віку.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-card__photo">
+                        <img src="img/team.jpg" alt="Команда U&S Dental" loading="lazy">
+                    </div>
+                    <div class="team-card__info">
+                        <h3 class="team-card__name">Наша команда</h3>
+                        <p class="team-card__role">Разом для вашої усмішки</p>
+                        <p class="team-card__desc">Злагоджена команда професіоналів, які працюють разом, щоб забезпечити найкращий результат для кожного пацієнта.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <p class="section__label">Відгуки</p>
+                <h2 class="section__title">Що кажуть наші <span class="text-accent">пацієнти</span></h2>
+            </div>
+            <div class="reviews__grid">
+                <div class="review-card" data-aos>
+                    <div class="review-card__stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-card__text">"Клініка у гарному районі, затишна, ввічливий персонал. Велика подяка лікарю Данилюк Любов Богданівні — справді великий професіонал!"</p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">Н</div>
+                        <div>
+                            <strong>Наталія К.</strong>
+                            <span>Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-aos>
+                    <div class="review-card__stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-card__text">"Видалили 3 зуби мудрості протягом 50 хвилин! Все пройшло дуже швидко, професійно і без жодних проблем. Рекомендую однозначно!"</p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">А</div>
+                        <div>
+                            <strong>Артем П.</strong>
+                            <span>Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card" data-aos>
+                    <div class="review-card__stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-card__text">"Швидко та якісно допомогли! Лікарі добрі та привітні, сучасне обладнання. Тепер лікую зуби тільки тут. Дякую!"</p>
+                    <div class="review-card__author">
+                        <div class="review-card__avatar">Т</div>
+                        <div>
+                            <strong>Таня Т.</strong>
+                            <span>Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta__inner">
+                <h2 class="cta__title">Готові подбати про свою усмішку?</h2>
+                <p class="cta__text">Запишіться на безкоштовну консультацію вже сьогодні. Ми допоможемо скласти індивідуальний план лікування.</p>
+                <div class="cta__actions">
+                    <a href="tel:+380678107237" class="btn btn--white">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Зателефонувати
+                    </a>
+                    <a href="https://www.instagram.com/us.dental_clinic/" target="_blank" rel="noopener" class="btn btn--white-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts section" id="contacts">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <p class="section__label">Контакти</p>
+                <h2 class="section__title">Як нас <span class="text-accent">знайти</span></h2>
+            </div>
+            <div class="contacts__inner">
+                <div class="contacts__info">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <strong>Адреса</strong>
+                            <p>вул. Замарстинівська, 55Є<br>Львів, 79002</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Телефони</strong>
+                            <p><a href="tel:+380678107237">+380 67 810 7237</a></p>
+                            <p><a href="tel:+380632168060">+380 63 216 8060</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <strong>Графік роботи</strong>
+                            <p>Пн — Пт: 09:00 — 20:00<br>Сб — Нд: Вихідний</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:uandsdental@gmail.com">uandsdental@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contacts__socials">
+                        <a href="https://www.facebook.com/p/US-dental-clinic-100087798736612/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/us.dental_clinic/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.5!2d24.0267663!3d49.856006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUxJzIxLjYiTiAyNMKwMDEnMzYuNCJF!5e0!3m2!1suk!2sua!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта розташування U&S Dental Clinic"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="logo">
+                    <img src="img/logo.jpg" alt="U&S Dental Clinic" class="logo__img logo__img--footer">
+                </a>
+                <p>Професійний догляд за вашою усмішкою у Львові з 2021 року.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Навігація</h4>
+                <a href="#about">Про нас</a>
+                <a href="#services">Послуги</a>
+                <a href="#team">Команда</a>
+                <a href="#reviews">Відгуки</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+            <div class="footer__links">
+                <h4>Послуги</h4>
+                <a href="#services">Лікування зубів</a>
+                <a href="#services">Протезування</a>
+                <a href="#services">Імплантологія</a>
+                <a href="#services">Ортодонтія</a>
+                <a href="#services">Відбілювання</a>
+            </div>
+            <div class="footer__links">
+                <h4>Контакти</h4>
+                <a href="tel:+380678107237">+380 67 810 7237</a>
+                <a href="tel:+380632168060">+380 63 216 8060</a>
+                <a href="mailto:uandsdental@gmail.com">uandsdental@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2021 — 2026 U&S Dental Clinic. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
