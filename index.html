@@ -3,458 +3,934 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U&S Dental Clinic — Стоматологічна клініка у Львові</title>
-    <meta name="description" content="Стоматологічна клініка U&S у Львові. Лікування, протезування, імплантологія, ортодонтія. Понад 20 років досвіду. Запишіться на прийом!">
+    <title>U&S Dental Clinic — преміальна стоматологія у Львові</title>
+    <meta name="description" content="U&S Dental Clinic — сучасна стоматологічна клініка у Львові. Терапія, ендодонтія, ортодонтія, гігієна та відбілювання. Прозорі ціни, безболісне лікування, індивідуальний план. Запишіться на консультацію.">
+    <meta name="theme-color" content="#2C5A72">
+    <link rel="canonical" href="https://usdental.clinic/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="U&S Dental Clinic — преміальна стоматологія у Львові">
+    <meta property="og:description" content="Сучасна стоматологія у Львові: прозорі ціни, безболісне лікування, індивідуальний план для кожного пацієнта.">
+    <meta property="og:locale" content="uk_UA">
+
     <link rel="icon" href="img/logo.jpg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "U&S Dental Clinic",
+      "image": "img/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Замарстинівська, 55Є",
+        "addressLocality": "Львів",
+        "postalCode": "79000",
+        "addressCountry": "UA"
+      },
+      "telephone": "+380678107237",
+      "email": "uandsdental@gmail.com",
+      "priceRange": "₴₴",
+      "openingHours": "Mo-Fr 09:00-20:00",
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "48" }
+    }
+    </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container header__inner">
-            <a href="#" class="logo">
-                <img src="img/logo.jpg" alt="U&S Dental Clinic" class="logo__img">
-            </a>
-            <nav class="nav" id="nav">
-                <a href="#about" class="nav__link">Про нас</a>
-                <a href="#services" class="nav__link">Послуги</a>
-                <a href="#team" class="nav__link">Команда</a>
-                <a href="#reviews" class="nav__link">Відгуки</a>
-                <a href="#contacts" class="nav__link">Контакти</a>
-            </nav>
+
+<!-- ============================ HEADER ============================ -->
+<header class="header" id="header">
+    <div class="container header__bar">
+        <a href="#top" class="brand" aria-label="U&S Dental Clinic">
+            <img src="img/logo.jpg" alt="" class="brand__mark" width="46" height="46">
+            <span class="brand__text">
+                <span class="brand__name">U&S Dental Clinic</span>
+                <span class="brand__tag">Львів</span>
+            </span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Головна навігація">
+            <a href="#about" class="nav__link">Про клініку</a>
+            <a href="#services" class="nav__link">Послуги</a>
+            <a href="#price" class="nav__link">Ціни</a>
+            <a href="#team" class="nav__link">Команда</a>
+            <a href="#reviews" class="nav__link">Відгуки</a>
+            <a href="#contacts" class="nav__link">Контакти</a>
+            <a href="tel:+380678107237" class="btn btn--primary nav__cta">Записатися</a>
+        </nav>
+
+        <div class="header__actions">
             <a href="tel:+380678107237" class="header__phone">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                +380 67 810 7237
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +380 67 810 72 37
             </a>
-            <button class="burger" id="burger" aria-label="Меню">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a href="#contacts" class="btn btn--primary btn--sm">Записатися</a>
+            <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
             </button>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container hero__inner">
-            <div class="hero__content">
-                <p class="hero__badge">Понад 20 років досвіду</p>
-                <h1 class="hero__title">Ваша усмішка — <br>наша <span class="text-accent">турбота</span></h1>
-                <p class="hero__text">Сучасна стоматологія у Львові, де кожен пацієнт отримує персональну увагу, комфортне лікування та результат, який надихає усміхатися.</p>
-                <div class="hero__actions">
-                    <a href="tel:+380678107237" class="btn btn--primary">Записатися на прийом</a>
-                    <a href="#services" class="btn btn--outline">Наші послуги</a>
+<div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+<main id="top">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero__grid">
+            <div class="hero__copy">
+                <p class="eyebrow eyebrow--pill" data-reveal="up">Стоматологія у Львові · з 2021 року</p>
+
+                <h1 class="hero__title" data-reveal="up" style="--reveal-delay:90ms">
+                    Здорові зуби
+                    <span class="display">і спокійна усмішка</span>
+                </h1>
+
+                <p class="lead hero__lead" data-reveal="up" style="--reveal-delay:180ms">
+                    Клініка, у якій лікування відчувається просто й передбачувано: чесна діагностика,
+                    зрозумілий план, прозорі ціни та повний комфорт на кожному візиті.
+                </p>
+
+                <div class="hero__cta" data-reveal="up" style="--reveal-delay:260ms">
+                    <a href="tel:+380678107237" class="btn btn--primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Записатися на консультацію
+                    </a>
+                    <a href="#price" class="btn btn--ghost">
+                        Переглянути ціни
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
                 </div>
-                <div class="hero__stats">
-                    <div class="hero__stat">
-                        <span class="hero__stat-number">20+</span>
-                        <span class="hero__stat-label">років досвіду</span>
+
+                <div class="hero__trust" data-reveal="up" style="--reveal-delay:340ms">
+                    <div class="avatars" aria-hidden="true">
+                        <img src="img/2025-10-22.webp" alt="" loading="lazy">
+                        <img src="img/ortodont.jpg" alt="" loading="lazy">
+                        <img src="img/oksana_stavinoga-main-doctor.jpg" alt="" loading="lazy">
+                        <span>1000+</span>
                     </div>
-                    <div class="hero__stat">
-                        <span class="hero__stat-number">5.0</span>
-                        <span class="hero__stat-label">рейтинг Google</span>
-                    </div>
-                    <div class="hero__stat">
-                        <span class="hero__stat-number">1000+</span>
-                        <span class="hero__stat-label">щасливих пацієнтів</span>
+                    <div class="trust__meta">
+                        <span class="stars" aria-hidden="true">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </span>
+                        <span class="trust__text"><b>5.0</b> на Google · понад 1000 пацієнтів довіряють нам</span>
                     </div>
                 </div>
             </div>
-            <div class="hero__visual">
-                <div class="hero__image-wrapper">
-                    <div class="hero__blob"></div>
-                    <img src="img/team.jpg" alt="Команда U&S Dental Clinic" class="hero__photo">
+
+            <div class="hero__visual" data-reveal="scale" style="--reveal-delay:200ms">
+                <span class="hero__glow hero__glow--a" aria-hidden="true"></span>
+                <span class="hero__glow hero__glow--b" aria-hidden="true"></span>
+
+                <div class="hero__frame" data-parallax="-0.05">
+                    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GujPJNKIida1BxMVJksR2fpoVO/hf_20260729_174116_62f48aee-0a8d-4ecb-a258-b540c72b5480_min.webp"
+                         alt="Пацієнтка в кріслі сучасної стоматологічної клініки" width="1792" height="2400" fetchpriority="high">
+                </div>
+
+                <div class="float-card float-card--tl" data-parallax="0.06">
+                    <span class="float-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 11 2 2 4-4"/></svg>
+                    </span>
+                    <div>
+                        <b>Безболісно</b>
+                        <span>сучасна анестезія</span>
+                    </div>
+                </div>
+
+                <div class="float-card float-card--br" data-parallax="0.1">
+                    <span class="float-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    </span>
+                    <div>
+                        <b>Пн–Пт · 09:00–20:00</b>
+                        <span>запис на зручний час</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="hero__wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--color-bg)"/>
-            </svg>
-        </div>
-    </section>
 
-    <!-- About -->
-    <section class="about section" id="about">
-        <div class="container">
-            <div class="about__inner">
-                <div class="about__image">
-                    <img src="img/kabinet.webp" alt="Сучасний кабінет U&S Dental Clinic" class="about__photo">
-                    <div class="about__card">
-                        <span class="about__card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <!-- Факти -->
+        <div class="facts" data-reveal="up" data-stagger="90">
+            <div class="fact">
+                <span class="fact__num"><b data-count="20">0</b><i>+</i></span>
+                <span class="fact__label">років клінічного досвіду команди</span>
+            </div>
+            <div class="fact">
+                <span class="fact__num"><b data-count="1000">0</b><i>+</i></span>
+                <span class="fact__label">пацієнтів, які нам довірились</span>
+            </div>
+            <div class="fact">
+                <span class="fact__num"><b data-count="5" data-decimals="1">0</b></span>
+                <span class="fact__label">середня оцінка на Google Maps</span>
+            </div>
+            <div class="fact">
+                <span class="fact__num"><i>100%</i></span>
+                <span class="fact__label">стерильність та одноразові матеріали</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ ПЕРЕВАГИ ============================ -->
+<section class="section section--tight">
+    <div class="container">
+        <div class="s-head s-head--center" data-reveal="up">
+            <p class="eyebrow">Чому обирають нас</p>
+            <h2 class="s-title">Медицина, у якій <span class="display">немає сюрпризів</span></h2>
+            <p class="s-sub">Ми будуємо стоматологію навколо трьох речей: точна діагностика, чесна комунікація та результат, що служить роками.</p>
+        </div>
+
+        <div class="values" data-stagger="110">
+            <article class="value" data-reveal="up">
+                <span class="value__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 11 2 2 4-4"/></svg>
+                </span>
+                <h3>Лікування без болю</h3>
+                <p>Сучасні протоколи анестезії, кофердам та делікатна робота — навіть складне втручання проходить спокійно.</p>
+            </article>
+
+            <article class="value" data-reveal="up">
+                <span class="value__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M8 8h5M8 16h6"/></svg>
+                </span>
+                <h3>Прозорий план і ціна</h3>
+                <p>Ви бачите повний план лікування та його вартість до початку робіт. Без прихованих доплат «по ходу».</p>
+            </article>
+
+            <article class="value" data-reveal="up">
+                <span class="value__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.9 2.9M16.2 16.2l2.9 2.9M2 12h4M18 12h4M4.9 19.1l2.9-2.9M16.2 7.8l2.9-2.9"/><circle cx="12" cy="12" r="3.5"/></svg>
+                </span>
+                <h3>Цифрова діагностика</h3>
+                <p>Рентген і 3D-сканування щелеп та прикусу — рішення приймаються на основі даних, а не припущень.</p>
+            </article>
+
+            <article class="value" data-reveal="up">
+                <span class="value__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </span>
+                <h3>Людяне ставлення</h3>
+                <p>Один лікар веде вас від першого огляду до фінального результату. Ми пояснюємо все зрозумілою мовою.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ ПРО КЛІНІКУ ============================ -->
+<section class="section section--alt" id="about">
+    <div class="container">
+        <div class="about__grid">
+            <div class="about__media" data-reveal="left">
+                <figure><img src="img/kabinet.webp" alt="Кабінет U&S Dental Clinic" loading="lazy"></figure>
+                <figure><img src="img/639737903_18564738931047888_7901752494834414344_n.webp" alt="Інтер'єр клініки" loading="lazy"></figure>
+                <figure><img src="img/unnamed.webp" alt="Процес лікування" loading="lazy"></figure>
+                <div class="about__badge" data-parallax="0.05">
+                    <div>
+                        <b>2021</b>
+                        <span>рік заснування</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__content" data-reveal="right">
+                <p class="eyebrow">Про клініку</p>
+                <h2 class="s-title" style="margin:18px 0 20px">Простір, де про вас <span class="display">справді дбають</span></h2>
+
+                <p class="lead about__text">
+                    U&S Dental Clinic — сімейна стоматологія у Львові на Замарстинівській. Ми зібрали команду,
+                    для якої важлива не кількість пацієнтів за день, а те, як людина почувається у кріслі й через
+                    п'ять років після лікування.
+                </p>
+                <p class="lead about__text">
+                    Кожен візит починається з огляду та плану. Ви завжди знаєте, що відбувається, скільки це триватиме
+                    й скільки коштуватиме.
+                </p>
+
+                <div class="about__list" data-stagger="90">
+                    <div class="about__item" data-reveal="up">
+                        <span class="about__check">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
                         </span>
                         <div>
-                            <strong>З 2021 року</strong>
-                            <p>Офіційно працюємо у Львові</p>
+                            <b>Повний цикл під одним дахом</b>
+                            <p>Терапія, ендодонтія, ортодонтія, гігієна та протезування — без пересилань до інших клінік.</p>
                         </div>
                     </div>
-                </div>
-                <div class="about__content">
-                    <p class="section__label">Про клініку</p>
-                    <h2 class="section__title">Місце, де турбуються <br>про вашу <span class="text-accent">усмішку</span></h2>
-                    <p class="about__text">U&S Dental Clinic — це сучасна стоматологічна клініка у самому серці Львова. Наша команда фахівців з понад 20-річним досвідом поєднує професіоналізм із теплим, людяним підходом до кожного пацієнта.</p>
-                    <p class="about__text">Ми створили простір, де ви почуваєтесь безпечно та комфортно. Новітнє обладнання, сучасні методи анестезії та індивідуальний план лікування — все для того, щоб ваш візит був максимально приємним.</p>
-                    <div class="about__features">
-                        <div class="about__feature">
-                            <span class="about__feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                            </span>
-                            <div>
-                                <strong>Безболісне лікування</strong>
-                                <p>Сучасна анестезія для повного комфорту</p>
-                            </div>
-                        </div>
-                        <div class="about__feature">
-                            <span class="about__feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                            </span>
-                            <div>
-                                <strong>Індивідуальний підхід</strong>
-                                <p>Персональний план лікування для кожного</p>
-                            </div>
-                        </div>
-                        <div class="about__feature">
-                            <span class="about__feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                            </span>
-                            <div>
-                                <strong>Новітнє обладнання</strong>
-                                <p>Точна діагностика та ефективне лікування</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="services section" id="services">
-        <div class="container">
-            <div class="section__header section__header--center">
-                <p class="section__label">Послуги</p>
-                <h2 class="section__title">Повний спектр <span class="text-accent">стоматологічних</span> послуг</h2>
-                <p class="section__subtitle">Від профілактики до складного протезування — ми подбаємо про здоров'я ваших зубів на кожному етапі.</p>
-            </div>
-            <div class="services__grid">
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 1.5.5 3 1.5 4.2L12 22l5.5-8.8A7.5 7.5 0 0 0 19 9a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Лікування зубів</h3>
-                    <p class="service-card__text">Лікування карієсу, пульпіту та інших захворювань сучасними методами терапії. Пломбування з використанням найкращих матеріалів.</p>
-                </div>
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Протезування</h3>
-                    <p class="service-card__text">Відновлення втрачених зубів за допомогою коронок, мостів та знімних протезів. Повернемо естетику та функціональність вашої усмішки.</p>
-                </div>
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Імплантологія</h3>
-                    <p class="service-card__text">Встановлення зубних імплантів — надійне та довговічне рішення для заміни втрачених зубів. Природний вигляд та повна функціональність.</p>
-                </div>
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Ортодонтія</h3>
-                    <p class="service-card__text">Виправлення прикусу та вирівнювання зубів за допомогою брекет-систем та прозорих елайнерів для дітей і дорослих.</p>
-                </div>
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Професійна гігієна</h3>
-                    <p class="service-card__text">Комплексне чищення зубів, видалення зубного каменю та нальоту. Професійна профілактика для здорової усмішки.</p>
-                </div>
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Відбілювання зубів</h3>
-                    <p class="service-card__text">Безпечне та ефективне відбілювання для сяючої усмішки. Сучасні методи, які зберігають здоров'я емалі.</p>
-                </div>
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Дитяча стоматологія</h3>
-                    <p class="service-card__text">Дбайливий підхід до маленьких пацієнтів. Лікування в комфортній атмосфері, щоб діти не боялися стоматолога.</p>
-                </div>
-                <div class="service-card" data-aos>
-                    <div class="service-card__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                    </div>
-                    <h3 class="service-card__title">Рентген-діагностика</h3>
-                    <p class="service-card__text">Панорамний знімок зубів для точної діагностики. Сучасне обладнання з мінімальним рівнем випромінювання.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="gallery section">
-        <div class="container">
-            <div class="section__header section__header--center">
-                <p class="section__label">Наша клініка</p>
-                <h2 class="section__title">Затишок та <span class="text-accent">сучасність</span></h2>
-            </div>
-            <div class="gallery__grid">
-                <div class="gallery__item gallery__item--wide" data-aos>
-                    <img src="img/kabinet.webp" alt="Стоматологічний кабінет" loading="lazy">
-                </div>
-                <div class="gallery__item" data-aos>
-                    <img src="img/639737903_18564738931047888_7901752494834414344_n.webp" alt="Інтер'єр клініки" loading="lazy">
-                </div>
-                <div class="gallery__item" data-aos>
-                    <img src="img/unnamed.webp" alt="Процес лікування" loading="lazy">
-                </div>
-                <div class="gallery__item" data-aos>
-                    <img src="img/oksana_stavinoga-main-doctor.jpg" alt="Стерилізація інструментів" loading="lazy">
-                </div>
-                <div class="gallery__item" data-aos>
-                    <img src="img/2025-10-22.webp" alt="Лікар за роботою" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section class="team section" id="team">
-        <div class="container">
-            <div class="section__header section__header--center">
-                <p class="section__label">Наша команда</p>
-                <h2 class="section__title">Фахівці, яким <span class="text-accent">довіряють</span></h2>
-                <p class="section__subtitle">Наші лікарі — це досвідчені професіонали, які постійно вдосконалюють свої навички та слідкують за новітніми тенденціями у стоматології.</p>
-            </div>
-            <div class="team__grid">
-                <div class="team-card" data-aos>
-                    <div class="team-card__photo">
-                        <img src="img/2025-10-22.webp" alt="Ставінога Оксана Федорівна" loading="lazy">
-                    </div>
-                    <div class="team-card__info">
-                        <h3 class="team-card__name">Ставінога Оксана Федорівна</h3>
-                        <p class="team-card__role">Лікар-стоматолог</p>
-                        <p class="team-card__desc">Досвідчений фахівець з багаторічним стажем. Спеціалізується на терапевтичній стоматології та протезуванні.</p>
-                    </div>
-                </div>
-                <div class="team-card" data-aos>
-                    <div class="team-card__photo">
-                        <img src="img/ortodont.jpg" alt="Лікар-ортодонт" loading="lazy">
-                    </div>
-                    <div class="team-card__info">
-                        <h3 class="team-card__name">Лікар-ортодонт</h3>
-                        <p class="team-card__role">Ортодонтія</p>
-                        <p class="team-card__desc">Спеціаліст з виправлення прикусу. Працює з брекет-системами та елайнерами для пацієнтів будь-якого віку.</p>
-                    </div>
-                </div>
-                <div class="team-card" data-aos>
-                    <div class="team-card__photo">
-                        <img src="img/team.jpg" alt="Команда U&S Dental" loading="lazy">
-                    </div>
-                    <div class="team-card__info">
-                        <h3 class="team-card__name">Наша команда</h3>
-                        <p class="team-card__role">Разом для вашої усмішки</p>
-                        <p class="team-card__desc">Злагоджена команда професіоналів, які працюють разом, щоб забезпечити найкращий результат для кожного пацієнта.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="reviews section" id="reviews">
-        <div class="container">
-            <div class="section__header section__header--center">
-                <p class="section__label">Відгуки</p>
-                <h2 class="section__title">Що кажуть наші <span class="text-accent">пацієнти</span></h2>
-            </div>
-            <div class="reviews__grid">
-                <div class="review-card" data-aos>
-                    <div class="review-card__stars">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="review-card__text">"Клініка у гарному районі, затишна, ввічливий персонал. Велика подяка лікарю Данилюк Любов Богданівні — справді великий професіонал!"</p>
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">Н</div>
+                    <div class="about__item" data-reveal="up">
+                        <span class="about__check">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                        </span>
                         <div>
-                            <strong>Наталія К.</strong>
-                            <span>Google Maps</span>
+                            <b>Стерильність рівня операційної</b>
+                            <p>Автоклавування, індивідуальні набори інструментів та одноразові витратні матеріали.</p>
                         </div>
                     </div>
-                </div>
-                <div class="review-card" data-aos>
-                    <div class="review-card__stars">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="review-card__text">"Видалили 3 зуби мудрості протягом 50 хвилин! Все пройшло дуже швидко, професійно і без жодних проблем. Рекомендую однозначно!"</p>
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">А</div>
+                    <div class="about__item" data-reveal="up">
+                        <span class="about__check">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                        </span>
                         <div>
-                            <strong>Артем П.</strong>
-                            <span>Google Maps</span>
+                            <b>Дбайливо до дітей і тих, хто боїться</b>
+                            <p>Спокійний темп, пояснення кожного кроку та можливість зупинитись у будь-який момент.</p>
                         </div>
                     </div>
                 </div>
-                <div class="review-card" data-aos>
-                    <div class="review-card__stars">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="review-card__text">"Швидко та якісно допомогли! Лікарі добрі та привітні, сучасне обладнання. Тепер лікую зуби тільки тут. Дякую!"</p>
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">Т</div>
-                        <div>
-                            <strong>Таня Т.</strong>
-                            <span>Google Maps</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA -->
-    <section class="cta section">
-        <div class="container">
-            <div class="cta__inner">
-                <h2 class="cta__title">Готові подбати про свою усмішку?</h2>
-                <p class="cta__text">Запишіться на безкоштовну консультацію вже сьогодні. Ми допоможемо скласти індивідуальний план лікування.</p>
-                <div class="cta__actions">
-                    <a href="tel:+380678107237" class="btn btn--white">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Зателефонувати
+                <p style="margin-top:30px">
+                    <a href="#contacts" class="link-arrow">
+                        Записатися на первинну консультацію
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                     </a>
-                    <a href="https://www.instagram.com/us.dental_clinic/" target="_blank" rel="noopener" class="btn btn--white-outline">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                        Instagram
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ ПОСЛУГИ ============================ -->
+<section class="section" id="services">
+    <div class="container">
+        <div class="s-head s-head--center" data-reveal="up">
+            <p class="eyebrow">Послуги</p>
+            <h2 class="s-title">Повний спектр <span class="display">стоматологічної допомоги</span></h2>
+            <p class="s-sub">Від профілактичної гігієни до складної ендодонтії та ортодонтичного лікування.</p>
+        </div>
+
+        <div class="services__grid" data-stagger="70">
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.5 0-3.5 1.2-5 1.2S4 3.6 3.4 5.4c-.8 2.4 0 5.4.8 8.2.7 2.4 1.4 5.4 3 5.4s1.6-3.2 2.8-3.2 1.2 3.2 2.8 3.2 2.3-3 3-5.4c.8-2.8 1.6-5.8.8-8.2C15.9 3.6 14.5 4.2 13 4.2"/></svg>
+                </span>
+                <h3>Терапевтичне лікування</h3>
+                <p>Карієс, пульпіт, фотополімерні пломби та художня реставрація зубів із збереженням природної форми.</p>
+                <span class="service__price">від 1 200 ₴</span>
+            </article>
+
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v14"/><path d="M8 16c0 3 1 6 4 6s4-3 4-6"/><path d="M6 6h12"/></svg>
+                </span>
+                <h3>Ендодонтія</h3>
+                <p>Лікування кореневих каналів під мікроскопічним контролем — первинне та повторне, з гарантією якості.</p>
+                <span class="service__price">від 1 400 ₴</span>
+            </article>
+
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="9" width="20" height="6" rx="2"/><path d="M7 9v6M12 9v6M17 9v6"/></svg>
+                </span>
+                <h3>Ортодонтія</h3>
+                <p>Металеві, самолігатурні та керамічні брекет-системи, пластинки й ретейнери для дітей і дорослих.</p>
+                <span class="service__price">від 16 000 ₴</span>
+            </article>
+
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.6 4.6A2 2 0 1 1 11 8H2M12.6 19.4A2 2 0 1 0 14 16H2M17.7 7.7A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+                </span>
+                <h3>Професійна гігієна</h3>
+                <p>Ультразвукове зняття каменю, Air Flow, полірування та фторування — основа здоров'я на роки.</p>
+                <span class="service__price">2 200 ₴</span>
+            </article>
+
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <h3>Відбілювання</h3>
+                <p>Професійне лампове відбілювання, що освітлює емаль на кілька тонів і не шкодить її структурі.</p>
+                <span class="service__price">3 800 ₴</span>
+            </article>
+
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4"/><path d="M9 10h6"/></svg>
+                </span>
+                <h3>Цифрова діагностика</h3>
+                <p>Прицільний рентген та сканування двох щелеп і прикусу для точного планування лікування.</p>
+                <span class="service__price">від 100 ₴</span>
+            </article>
+
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.7 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </span>
+                <h3>Дитяча стоматологія</h3>
+                <p>Герметизація фісур, фторування та лікування без стресу — щоб перший досвід був спокійним.</p>
+                <span class="service__price">від 300 ₴</span>
+            </article>
+
+            <article class="service" data-reveal="up">
+                <span class="service__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-4.4 7-10a7 7 0 1 0-14 0c0 5.6 7 10 7 10z"/><circle cx="12" cy="11" r="2.6"/></svg>
+                </span>
+                <h3>Протезування</h3>
+                <p>Відновлення культі зуба, вкладки та коронки, що повертають жувальну функцію й естетику.</p>
+                <span class="service__price">від 2 000 ₴</span>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ ПРАЙС ============================ -->
+<section class="section section--alt" id="price">
+    <div class="container">
+        <div class="price__head">
+            <div class="s-head" data-reveal="up" style="margin-bottom:0">
+                <p class="eyebrow">Прайс-лист</p>
+                <h2 class="s-title">Ціни <span class="display">без дрібного шрифту</span></h2>
+                <p class="s-sub">Вартість основних послуг станом на 2026 рік. Точну суму ви отримаєте в письмовому плані лікування після огляду.</p>
+            </div>
+            <a href="tel:+380632168060" class="btn btn--ghost" data-reveal="up" style="--reveal-delay:120ms">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Уточнити вартість
+            </a>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Категорії прайсу" data-reveal="up">
+            <button class="tab is-active" role="tab" aria-selected="true" aria-controls="p-general" id="t-general">Загальна стоматологія</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="p-therapy" id="t-therapy">Терапевтичне лікування</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="p-endo" id="t-endo">Ендодонтичне лікування</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="p-ortho" id="t-ortho">Ортодонтія</button>
+        </div>
+
+        <div class="price__panels" data-reveal="up" style="--reveal-delay:80ms">
+
+            <!-- Загальна стоматологія -->
+            <div class="panel is-active" id="p-general" role="tabpanel" aria-labelledby="t-general">
+                <p class="panel__group-title">Прийом та діагностика</p>
+                <div class="price-row"><span class="price-row__name">Консультація</span><span class="price-row__val">800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Огляд</span><span class="price-row__val">300 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Складання плану лікування</span><span class="price-row__val">750 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Рентген</span><span class="price-row__val">100 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Сканування двох щелеп та прикусу</span><span class="price-row__val">2 000 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Супровід лікування</p>
+                <div class="price-row"><span class="price-row__name">Анестезія</span><span class="price-row__val">200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Кофердам</span><span class="price-row__val">300 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Оптрагейт</span><span class="price-row__val">250 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Тимчасова пломба</span><span class="price-row__val">100 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Гігієна та естетика</p>
+                <div class="price-row"><span class="price-row__name">Професійна гігієна ротової порожнини</span><span class="price-row__val">2 200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Професійне лампове відбілювання зубів</span><span class="price-row__val">3 800 <span>₴</span></span></div>
+            </div>
+
+            <!-- Терапевтичне -->
+            <div class="panel" id="p-therapy" role="tabpanel" aria-labelledby="t-therapy" hidden>
+                <p class="panel__group-title">Пломбування</p>
+                <div class="price-row"><span class="price-row__name">Пломба фотополімерна</span><span class="price-row__val">1 200 – 1 800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Зняття старої пломби</span><span class="price-row__val">200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Тимчасова пломба</span><span class="price-row__val">100 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Реставрація</p>
+                <div class="price-row"><span class="price-row__name">Художня реставрація зуба</span><span class="price-row__val">2 800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Реставрація зуба ½<small>фронтальна ділянка</small></span><span class="price-row__val">2 200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Штифт анкерний</span><span class="price-row__val">300 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Відновлення культі зуба<small>під протезування</small></span><span class="price-row__val">2 000 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Профілактика</p>
+                <div class="price-row"><span class="price-row__name">Фторування зубів</span><span class="price-row__val">350 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Полірування зубів (гумка + паста)</span><span class="price-row__val">200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Герметизація фісур</span><span class="price-row__val">300 <span>₴</span></span></div>
+            </div>
+
+            <!-- Ендодонтія -->
+            <div class="panel" id="p-endo" role="tabpanel" aria-labelledby="t-endo" hidden>
+                <p class="panel__group-title">Первинне ендодонтичне лікування</p>
+                <div class="price-row"><span class="price-row__name">1-канальний зуб</span><span class="price-row__val">1 400 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">2-канальний зуб</span><span class="price-row__val">2 800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">3-канальний зуб</span><span class="price-row__val">4 200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">4-канальний зуб</span><span class="price-row__val">5 600 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Вторинна ендодонтія</p>
+                <div class="price-row"><span class="price-row__name">1-канальний зуб</span><span class="price-row__val">1 800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">2-канальний зуб</span><span class="price-row__val">3 600 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">3-канальний зуб</span><span class="price-row__val">5 400 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">4-канальний зуб</span><span class="price-row__val">6 000 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Окремі маніпуляції</p>
+                <div class="price-row"><span class="price-row__name">Пломбування 1 кореневого каналу</span><span class="price-row__val">800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Розпломбовка 1 кореневого каналу</span><span class="price-row__val">1 400 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Вторинна розпломбовка 1 каналу</span><span class="price-row__val">2 000 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Преендодонтичне відновлення зуба</span><span class="price-row__val">1 000 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Постановка ліків в 1 кореневий канал</span><span class="price-row__val">100 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Медикаментозна обробка 1 каналу</span><span class="price-row__val">300 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Вилучення анкерного штифта</span><span class="price-row__val">500 <span>₴</span></span></div>
+            </div>
+
+            <!-- Ортодонтія -->
+            <div class="panel" id="p-ortho" role="tabpanel" aria-labelledby="t-ortho" hidden>
+                <p class="panel__group-title">Консультація</p>
+                <div class="price-row"><span class="price-row__name">Консультація ортодонта</span><span class="price-row__val">800 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Брекет-системи</p>
+                <div class="price-row"><span class="price-row__name">Лікування металевою брекет-системою</span><span class="price-row__val">16 000 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Лікування самолігатурною металевою брекет-системою</span><span class="price-row__val">20 000 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Лікування керамічною брекет-системою</span><span class="price-row__val">20 000 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Лікування самолігатурною керамічною брекет-системою</span><span class="price-row__val">26 000 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Супровід та окремі візити</p>
+                <div class="price-row"><span class="price-row__name">Плановий візит (зміна гумок)</span><span class="price-row__val">400 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Плановий візит з пластинкою</span><span class="price-row__val">400 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Міжщелепні еластики</span><span class="price-row__val">200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Заміна 1 дуги</span><span class="price-row__val">200 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Повторна фіксація брекета</span><span class="price-row__val">800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Фіксація брекета-кнопки</span><span class="price-row__val">400 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Знімання брекет-системи</span><span class="price-row__val">2 000 <span>₴</span></span></div>
+
+                <p class="panel__group-title">Ретенція</p>
+                <div class="price-row"><span class="price-row__name">Фіксація ретейнера</span><span class="price-row__val">2 000 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Дофіксація ретейнера (1 зуб)</span><span class="price-row__val">300 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Знімання ретейнера</span><span class="price-row__val">800 <span>₴</span></span></div>
+                <div class="price-row"><span class="price-row__name">Капа від бруксизму</span><span class="price-row__val">3 000 <span>₴</span></span></div>
+            </div>
+        </div>
+
+        <p class="price__note" data-reveal="up">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Ціни вказані в гривнях і є орієнтовними. Остаточна вартість залежить від клінічної ситуації та фіксується у плані лікування перед початком робіт.
+        </p>
+    </div>
+</section>
+
+<!-- ============================ ЯК ПРОХОДИТЬ ВІЗИТ ============================ -->
+<section class="section">
+    <div class="container">
+        <div class="s-head s-head--center" data-reveal="up">
+            <p class="eyebrow">Як це відбувається</p>
+            <h2 class="s-title">Чотири кроки до <span class="display">спокійного результату</span></h2>
+        </div>
+
+        <div class="steps" data-stagger="120">
+            <article class="step" data-reveal="up">
+                <span class="step__num">01</span>
+                <h3>Запис і знайомство</h3>
+                <p>Телефонуєте або пишете в Instagram — підбираємо зручний час без черг і очікування.</p>
+            </article>
+            <article class="step" data-reveal="up">
+                <span class="step__num">02</span>
+                <h3>Огляд і діагностика</h3>
+                <p>Оглядаємо порожнину рота, робимо знімки та за потреби скануємо щелепи й прикус.</p>
+            </article>
+            <article class="step" data-reveal="up">
+                <span class="step__num">03</span>
+                <h3>План і вартість</h3>
+                <p>Отримуєте письмовий план з етапами, термінами та точною сумою. Рішення — за вами.</p>
+            </article>
+            <article class="step" data-reveal="up">
+                <span class="step__num">04</span>
+                <h3>Лікування і підтримка</h3>
+                <p>Проводимо лікування та запрошуємо на профілактичні огляди, щоб результат тримався роками.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ SHOWCASE / PARALLAX ============================ -->
+<section class="showcase">
+    <div class="showcase__bg" data-parallax="0.12" aria-hidden="true">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GujPJNKIida1BxMVJksR2fpoVO/hf_20260729_174119_2f225bd8-06df-4860-91f0-4704a15f43d5_min.webp"
+             alt="" loading="lazy" width="2752" height="1536">
+    </div>
+    <div class="container">
+        <div class="showcase__inner">
+            <p class="eyebrow" data-reveal="up">Наш простір</p>
+            <h2 class="showcase__title" data-reveal="up" style="--reveal-delay:90ms">Клініка, у яку <span class="display">не страшно йти</span></h2>
+            <p class="showcase__text" data-reveal="up" style="--reveal-delay:170ms">
+                Тиха музика, м'яке світло, жодного запаху «лікарні» та лікар, який пояснює кожен крок.
+                Ми зробили все, щоб візит до стоматолога перестав бути випробуванням.
+            </p>
+            <div class="showcase__cta" data-reveal="up" style="--reveal-delay:250ms">
+                <a href="tel:+380678107237" class="btn btn--light">Записатися на візит</a>
+                <a href="#reviews" class="btn btn--outline-light">Читати відгуки</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ КОМАНДА ============================ -->
+<section class="section" id="team">
+    <div class="container">
+        <div class="s-head s-head--center" data-reveal="up">
+            <p class="eyebrow">Команда</p>
+            <h2 class="s-title">Лікарі, яким <span class="display">довіряють родинами</span></h2>
+            <p class="s-sub">Кожен спеціаліст щороку проходить навчання та працює за сучасними клінічними протоколами.</p>
+        </div>
+
+        <div class="team__grid" data-stagger="120">
+            <article class="member" data-reveal="up">
+                <div class="member__photo">
+                    <img src="img/2025-10-22.webp" alt="Ставінога Оксана Федорівна, лікар-стоматолог" loading="lazy">
+                    <span class="member__role">Терапія · Протезування</span>
+                </div>
+                <div class="member__body">
+                    <h3 class="member__name">Ставінога Оксана Федорівна</h3>
+                    <p class="member__desc">Засновниця клініки. Спеціалізується на терапевтичній стоматології, реставраціях та протезуванні. Веде найскладніші випадки.</p>
+                </div>
+            </article>
+
+            <article class="member" data-reveal="up">
+                <div class="member__photo">
+                    <img src="img/ortodont.jpg" alt="Лікар-ортодонт клініки" loading="lazy">
+                    <span class="member__role">Ортодонтія</span>
+                </div>
+                <div class="member__body">
+                    <h3 class="member__name">Лікар-ортодонт</h3>
+                    <p class="member__desc">Виправлення прикусу брекет-системами та пластинками. Працює з пацієнтами будь-якого віку — від 6 років.</p>
+                </div>
+            </article>
+
+            <article class="member" data-reveal="up">
+                <div class="member__photo">
+                    <img src="img/team.jpg" alt="Команда U&S Dental Clinic" loading="lazy">
+                    <span class="member__role">Уся команда</span>
+                </div>
+                <div class="member__body">
+                    <h3 class="member__name">Асистенти та адміністратори</h3>
+                    <p class="member__desc">Люди, завдяки яким візит проходить без метушні: нагадають про запис, підготують кабінет і подбають про комфорт.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ ГАЛЕРЕЯ ============================ -->
+<section class="section section--alt">
+    <div class="container">
+        <div class="s-head s-head--center" data-reveal="up">
+            <p class="eyebrow">Галерея</p>
+            <h2 class="s-title">Затишок і <span class="display">сучасність</span></h2>
+        </div>
+
+        <div class="gallery__grid" data-stagger="90">
+            <figure class="shot shot--w2 shot--h2" data-reveal="mask">
+                <img src="img/kabinet.webp" alt="Стоматологічний кабінет" loading="lazy">
+            </figure>
+            <figure class="shot" data-reveal="mask">
+                <img src="img/639737903_18564738931047888_7901752494834414344_n.webp" alt="Інтер'єр клініки" loading="lazy">
+            </figure>
+            <figure class="shot" data-reveal="mask">
+                <img src="img/unnamed.webp" alt="Процес лікування" loading="lazy">
+            </figure>
+            <figure class="shot" data-reveal="mask">
+                <img src="img/624315848_18115160443620160_4794267777532281941_n.jpg" alt="Стерильний набір стоматологічних інструментів" loading="lazy">
+            </figure>
+            <figure class="shot" data-reveal="mask">
+                <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GujPJNKIida1BxMVJksR2fpoVO/hf_20260729_174124_190d6050-b5b8-4c01-a339-a48103b954ef_min.webp"
+                     alt="Здорова усмішка після лікування" loading="lazy">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ ВІДГУКИ ============================ -->
+<section class="section" id="reviews">
+    <div class="container">
+        <div class="s-head s-head--center" data-reveal="up">
+            <p class="eyebrow">Відгуки</p>
+            <h2 class="s-title">Що кажуть <span class="display">наші пацієнти</span></h2>
+            <p class="s-sub">Реальні відгуки з Google Maps — 5.0 із 5 за результатами понад 40 оцінок.</p>
+        </div>
+
+        <div class="reviews__grid" data-stagger="110">
+            <article class="review" data-reveal="up">
+                <span class="stars" aria-label="5 із 5">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </span>
+                <p class="review__quote">«Клініка у гарному районі, затишна, ввічливий персонал. Велика подяка лікарю Данилюк Любов Богданівні — справді великий професіонал!»</p>
+                <div class="review__author">
+                    <span class="review__avatar">Н</span>
+                    <div>
+                        <b>Наталія К.</b>
+                        <span>Google Maps</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="review" data-reveal="up">
+                <span class="stars" aria-label="5 із 5">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </span>
+                <p class="review__quote">«Видалили 3 зуби мудрості протягом 50 хвилин! Все пройшло дуже швидко, професійно і без жодних проблем. Рекомендую однозначно!»</p>
+                <div class="review__author">
+                    <span class="review__avatar">А</span>
+                    <div>
+                        <b>Артем П.</b>
+                        <span>Google Maps</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="review" data-reveal="up">
+                <span class="stars" aria-label="5 із 5">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </span>
+                <p class="review__quote">«Швидко та якісно допомогли! Лікарі добрі та привітні, сучасне обладнання. Тепер лікую зуби тільки тут. Дякую!»</p>
+                <div class="review__author">
+                    <span class="review__avatar">Т</span>
+                    <div>
+                        <b>Таня Т.</b>
+                        <span>Google Maps</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="section section--alt" id="faq">
+    <div class="container">
+        <div class="faq__grid">
+            <div class="s-head" data-reveal="left" style="margin-bottom:0">
+                <p class="eyebrow">Часті питання</p>
+                <h2 class="s-title">Відповідаємо <span class="display">чесно й наперед</span></h2>
+                <p class="s-sub">Не знайшли відповідь? Зателефонуйте — адміністратор проконсультує без запису.</p>
+                <a href="tel:+380678107237" class="btn btn--primary" style="align-self:flex-start;margin-top:8px">Поставити питання</a>
+            </div>
+
+            <div class="faq__list" data-reveal="right">
+                <div class="faq__item">
+                    <button class="faq__q" aria-expanded="false">
+                        Скільки коштує перший візит?
+                        <span class="faq__icon" aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq__a"><div><p>Огляд коштує 300 ₴, повна консультація зі складанням плану лікування — 800 ₴. Якщо потрібен рентген, це ще 100 ₴ за знімок. Усі суми озвучуються до початку прийому.</p></div></div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__q" aria-expanded="false">
+                        Чи буде боляче?
+                        <span class="faq__icon" aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq__a"><div><p>Ні. Ми працюємо під сучасною анестезією та обов'язково перевіряємо її дію перед початком. Місце уколу попередньо знеболюємо гелем, тож навіть він відчувається мінімально.</p></div></div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__q" aria-expanded="false">
+                        Чи можна лікуватися частинами?
+                        <span class="faq__icon" aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq__a"><div><p>Так. План лікування розбивається на етапи за пріоритетністю: спершу знімаємо біль і зупиняємо процеси, далі — планова робота у комфортному для вас темпі та бюджеті.</p></div></div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__q" aria-expanded="false">
+                        З якого віку приймаєте дітей?
+                        <span class="faq__icon" aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq__a"><div><p>З 3 років на профілактичні огляди, герметизацію фісур і фторування. Ортодонтичне лікування зазвичай починається з 6–8 років — точний час визначає лікар після огляду.</p></div></div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__q" aria-expanded="false">
+                        Скільки триває ортодонтичне лікування?
+                        <span class="faq__icon" aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq__a"><div><p>У середньому від 12 до 24 місяців залежно від складності прикусу. Планові візити відбуваються раз на 4–8 тижнів і коштують 400 ₴. Після зняття системи обов'язковий етап ретенції.</p></div></div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__q" aria-expanded="false">
+                        Як записатися на прийом?
+                        <span class="faq__icon" aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq__a"><div><p>Зателефонуйте на +380 67 810 72 37 або +380 63 216 80 60, чи напишіть у Direct в Instagram. Ми працюємо з понеділка по п'ятницю, 09:00–20:00.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ КОНТАКТИ ============================ -->
+<section class="section" id="contacts">
+    <div class="container">
+        <div class="s-head s-head--center" data-reveal="up">
+            <p class="eyebrow">Контакти</p>
+            <h2 class="s-title">Як нас <span class="display">знайти</span></h2>
+            <p class="s-sub">Замарстинівська, 55Є — п'ять хвилин пішки від зупинки, зручний під'їзд і паркування поруч.</p>
+        </div>
+
+        <div class="contacts__grid">
+            <div class="contacts__card" data-reveal="left">
+                <div class="contact">
+                    <span class="contact__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </span>
+                    <div>
+                        <b>Адреса</b>
+                        <p>вул. Замарстинівська, 55Є<br>Львів</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <span class="contact__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+                    <div>
+                        <b>Телефони</b>
+                        <p><a href="tel:+380678107237">+380 67 810 72 37</a><br><a href="tel:+380632168060">+380 63 216 80 60</a></p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <span class="contact__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    </span>
+                    <div>
+                        <b>Графік роботи</b>
+                        <p>Пн — Пт: 09:00 — 20:00<br>Сб — Нд: вихідний</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <span class="contact__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                    </span>
+                    <div>
+                        <b>Email</b>
+                        <p><a href="mailto:uandsdental@gmail.com">uandsdental@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/us.dental_clinic/" target="_blank" rel="noopener" class="social" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/p/US-dental-clinic-100087798736612/" target="_blank" rel="noopener" class="social" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="tel:+380678107237" class="social" aria-label="Зателефонувати">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contacts -->
-    <section class="contacts section" id="contacts">
-        <div class="container">
-            <div class="section__header section__header--center">
-                <p class="section__label">Контакти</p>
-                <h2 class="section__title">Як нас <span class="text-accent">знайти</span></h2>
-            </div>
-            <div class="contacts__inner">
-                <div class="contacts__info">
-                    <div class="contact-item">
-                        <div class="contact-item__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <div>
-                            <strong>Адреса</strong>
-                            <p>вул. Замарстинівська, 55Є<br>Львів, 79002</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </div>
-                        <div>
-                            <strong>Телефони</strong>
-                            <p><a href="tel:+380678107237">+380 67 810 7237</a></p>
-                            <p><a href="tel:+380632168060">+380 63 216 8060</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        </div>
-                        <div>
-                            <strong>Графік роботи</strong>
-                            <p>Пн — Пт: 09:00 — 20:00<br>Сб — Нд: Вихідний</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </div>
-                        <div>
-                            <strong>Email</strong>
-                            <p><a href="mailto:uandsdental@gmail.com">uandsdental@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contacts__socials">
-                        <a href="https://www.facebook.com/p/US-dental-clinic-100087798736612/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="https://www.instagram.com/us.dental_clinic/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="contacts__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.5!2d24.0267663!3d49.856006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDUxJzIxLjYiTiAyNMKwMDEnMzYuNCJF!5e0!3m2!1suk!2sua!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта розташування U&S Dental Clinic"></iframe>
-                </div>
+            <div class="contacts__map" data-reveal="right">
+                <iframe
+                    src="https://www.google.com/maps?q=%D0%97%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D1%82%D0%B8%D0%BD%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%2055%D0%84%2C%20%D0%9B%D1%8C%D0%B2%D1%96%D0%B2&output=embed&hl=uk"
+                    title="Карта: U&S Dental Clinic, вул. Замарстинівська 55Є, Львів"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer__inner">
-            <div class="footer__brand">
-                <a href="#" class="logo">
-                    <img src="img/logo.jpg" alt="U&S Dental Clinic" class="logo__img logo__img--footer">
+        <!-- CTA -->
+        <div class="cta" style="margin-top:clamp(48px,6vw,80px)" data-reveal="scale">
+            <div>
+                <h2 class="cta__title">Готові подбати про <span class="display">свою усмішку?</span></h2>
+                <p class="cta__text">Запишіться на огляд — і вже за один візит отримаєте зрозумілий план лікування з точною вартістю.</p>
+            </div>
+            <div class="cta__actions">
+                <a href="tel:+380678107237" class="btn btn--light">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Зателефонувати
                 </a>
-                <p>Професійний догляд за вашою усмішкою у Львові з 2021 року.</p>
-            </div>
-            <div class="footer__links">
-                <h4>Навігація</h4>
-                <a href="#about">Про нас</a>
-                <a href="#services">Послуги</a>
-                <a href="#team">Команда</a>
-                <a href="#reviews">Відгуки</a>
-                <a href="#contacts">Контакти</a>
-            </div>
-            <div class="footer__links">
-                <h4>Послуги</h4>
-                <a href="#services">Лікування зубів</a>
-                <a href="#services">Протезування</a>
-                <a href="#services">Імплантологія</a>
-                <a href="#services">Ортодонтія</a>
-                <a href="#services">Відбілювання</a>
-            </div>
-            <div class="footer__links">
-                <h4>Контакти</h4>
-                <a href="tel:+380678107237">+380 67 810 7237</a>
-                <a href="tel:+380632168060">+380 63 216 8060</a>
-                <a href="mailto:uandsdental@gmail.com">uandsdental@gmail.com</a>
+                <a href="https://www.instagram.com/us.dental_clinic/" target="_blank" rel="noopener" class="btn btn--outline-light">Написати в Instagram</a>
             </div>
         </div>
-        <div class="footer__bottom">
-            <div class="container">
-                <p>&copy; 2021 — 2026 U&S Dental Clinic. Всі права захищені.</p>
-            </div>
-        </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+    <div class="container footer__grid">
+        <div>
+            <a href="#top" class="brand">
+                <img src="img/logo.jpg" alt="" class="brand__mark" width="46" height="46">
+                <span class="brand__text">
+                    <span class="brand__name">U&S Dental Clinic</span>
+                    <span class="brand__tag">Львів</span>
+                </span>
+            </a>
+            <p class="footer__about">Сучасна стоматологія на Замарстинівській. Дбаємо про здоров'я вашої усмішки з 2021 року.</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/us.dental_clinic/" target="_blank" rel="noopener" class="social" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/p/US-dental-clinic-100087798736612/" target="_blank" rel="noopener" class="social" aria-label="Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__col">
+            <h4>Навігація</h4>
+            <a href="#about">Про клініку</a>
+            <a href="#services">Послуги</a>
+            <a href="#price">Ціни</a>
+            <a href="#team">Команда</a>
+            <a href="#reviews">Відгуки</a>
+            <a href="#faq">Питання</a>
+        </div>
+
+        <div class="footer__col">
+            <h4>Послуги</h4>
+            <a href="#price">Терапія</a>
+            <a href="#price">Ендодонтія</a>
+            <a href="#price">Ортодонтія</a>
+            <a href="#price">Гігієна</a>
+            <a href="#price">Відбілювання</a>
+        </div>
+
+        <div class="footer__col">
+            <h4>Контакти</h4>
+            <a href="tel:+380678107237">+380 67 810 72 37</a>
+            <a href="tel:+380632168060">+380 63 216 80 60</a>
+            <a href="mailto:uandsdental@gmail.com">uandsdental@gmail.com</a>
+            <a href="#contacts">вул. Замарстинівська, 55Є</a>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container">
+            <span>© 2021 — 2026 U&S Dental Clinic. Усі права захищені.</span>
+            <span>Ліцензована стоматологічна практика · Львів</span>
+        </div>
+    </div>
+</footer>
+
+<a href="tel:+380678107237" class="fab" id="fab">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Записатися
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
