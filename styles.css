@@ -1701,11 +1701,35 @@ h1, h2, h3, h4 {
 .footer__bottom .container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px 20px;
     font-size: var(--fs-xs);
     color: rgba(255, 255, 255, .45);
 }
+
+.footer__credit {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, .5);
+    transition: color var(--t-fast);
+}
+
+.footer__credit b {
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: rgba(255, 255, 255, .9);
+    transition: color var(--t-fast);
+}
+
+.footer__credit b i {
+    font-style: normal;
+    color: var(--blue-400);
+}
+
+.footer__credit:hover { color: rgba(255, 255, 255, .78); }
+.footer__credit:hover b { color: #fff; }
 
 /* -------------------------------------------------------------
    21. FLOATING CALL BUTTON (mobile)
@@ -1789,30 +1813,46 @@ h1, h2, h3, h4 {
 @media (max-width: 960px) {
     :root { --header-h: 70px; }
 
+    /* Суцільний фон замість backdrop-filter: інакше «прилиплий» хедер стає
+       containing block для fixed-меню й обрізає повноекранний оверлей. */
+    .header.is-stuck {
+        background: rgba(255, 255, 255, .96);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    /* Повноекранний оверлей — без відступів зліва/знизу */
     .nav {
         position: fixed;
-        inset: 0 0 0 auto;
-        width: min(86vw, 380px);
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
         gap: 6px;
         margin: 0;
-        padding: 80px 30px 40px;
+        padding: calc(var(--header-h) + 24px) var(--gutter) 40px;
         background: #fff;
-        box-shadow: -20px 0 60px -30px rgba(20, 35, 44, .4);
         transform: translateX(100%);
         transition: transform .45s var(--ease-out);
         overflow-y: auto;
+        overscroll-behavior: contain;
     }
 
     .nav.is-open { transform: none; }
 
+    /* Логотип і кнопка-хрестик лишаються над оверлеєм і клікабельні */
+    .brand,
+    .header__actions { position: relative; z-index: 2; }
+
     .nav__link {
         padding: 16px 4px;
-        font-size: 1.25rem;
+        font-size: 1.35rem;
         font-weight: 600;
         letter-spacing: -0.03em;
+        text-align: center;
         border-bottom: 1px solid var(--line-soft);
         border-radius: 0;
     }
@@ -1910,6 +1950,7 @@ h1, h2, h3, h4 {
     .footer .brand { justify-content: center; }
     .footer__about { margin-inline: auto; }
     .footer .socials { justify-content: center; }
+    .footer__bottom .container { justify-content: center; text-align: center; }
 
     /* Етапи лікування — центруємо номери й текст */
     .step { text-align: center; }
